@@ -3,5 +3,31 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center_vertical"
+    android:background="#4286f4">
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAmount"
+        android:layout_marginBottom="40dp"
+        android:hint="Enter amount in US $"
+        android:textAlignment="center" />
+    <Button
+        android:text="@string/convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConvert"
+        android:background="#000"
+        android:textColor="#fff" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResult"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center" />
 </LinearLayout>
